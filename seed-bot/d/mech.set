@@ -1,0 +1,36 @@
+NICK          juno
+USERFILE      1
+CMDCHAR       .
+LOGIN	      juno
+IRCNAME       4there was a sudden silence
+MODES         +ix-ws
+TOG CC        0
+TOG CLOAK     1
+TOG SPY       1
+SET OPMODES   4
+SET BANMODES  6
+SET AAWAY     1
+TOG NOIDLE    1
+
+CHANNEL       #pqi
+TOG PUB       1
+TOG MASS      1
+TOG SHIT      1
+TOG PROT      1
+TOG ENFM      0
+SET ENFM      +nst
+SET MDL       4
+SET MKL       4
+SET MBL       4
+SET MPL       1
+
+server 66.255.200.3 80
+server antiq.shit.la 80
+server antiq.shit.la 6667
+server antiq.shit.la 9999
+server antiq.evils.in 6667
+server antiq.evils.in 9999
+server antiq.evils.in 80
+server antiq.scifi.ro 80
+server antiq.scifi.ro 6667
+server antiq.scifi.ro 9999

